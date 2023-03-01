@@ -1,0 +1,117 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  height: 100%;
+}
+
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ここから */
+.top_menu li{
+  font-size: 20px;
+  padding: 15px;
+  /*文字サイズの指定がなかったのでちょうどよく見えるフォントサイズと50pxのヘッダの真ん中に文字が来るように隙間を配置*/
+  
+}
+
+
+header {
+  background-color: #2b2b2b;
+  height: 50px;
+}
+/*指定された背景色と高さ*/
+
+ .top_menu .left{
+  float: left;
+}
+
+.top_menu .right{
+  float: right;
+}
+
+header ul a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+header li {
+  list-style: none;
+}
+/* ここまでがheader部分の実装 */
+
+.main-header img {
+  position: absolute;
+  width: 13%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+/* main画像（白い「Achieve」の文字の画像）部分の実装 
+    なぜこれで中央寄せになるのかよくわからない
+    https://www.billionwallet.com/homepage/transform-translate.html/　*/
+
+}
+/* ここまでがmain-header*/
+
+.about {
+  font-size: 1.5rems;
+/* About Achieve部分の実装 */
+}
+
+.about p{
+  font-size: 0.8rems;
+}
+/*ここまでがabout*/
+
+
+.function {
+  background-color: #d3d3d3;
+  float: left;
+  width: 100%;
+}
+
+.function-images {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.function-image {
+  float: left;
+  margin: 20px; /*任意の隙間*/
+}
+/* ここまでがfunction部分の実装 */
+
+.footer {
+  height: 70px;
+  background-color: #283a4b;
+  width: 100%;
+  float: left;
+  display: table;
+  
+/* footer部分の実装 */
+}
+
+.footer p{
+  font-size: 0.8px;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
